@@ -1,6 +1,6 @@
 /* 
 Soal Prioritas 2
-Tugas Function No 2
+Tugas Perulangan No 3
 Buatlah sebuah function yang dapat menampilkan faktorial dari nilai-nilai di bawah ini:
 a. 10
 b. 40
