@@ -8,12 +8,12 @@ c. 50
 */
 
 // Fungsi untuk menghitung faktorial dari suatu nilai
-int faktorial(int nilai) {
+BigInt faktorial(int nilai) {
   if (nilai == 0 || nilai == 1) {
-    return 1;
+    return BigInt.one;
   } else {
     // Rekursif: Menghitung faktorial nilai dengan memanggil fungsi faktorial untuk nilai lebih kecil
-    return nilai * faktorial(nilai - 1);
+    return BigInt.from(nilai) * faktorial(nilai - 1);
   }
 }
 
@@ -24,7 +24,7 @@ void main() {
   // Iterasi melalui daftar nilai dan mencetak hasil faktorial
   for (int n in nilai) {
     // Memanggil fungsi faktorial untuk setiap nilai dan mendapatkan hasilnya
-    int hasil = faktorial(n);
+    BigInt hasil = faktorial(n);
     // Mencetak hasil faktorial
     print("Faktorial dari $n adalah $hasil");
   }
