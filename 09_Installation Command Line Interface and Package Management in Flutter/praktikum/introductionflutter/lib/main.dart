@@ -31,10 +31,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: SoalcliView(),
+      home: MyHomePage(title: 'Hello Alterra'),
     );
   }
 }
@@ -110,6 +110,21 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'Nama saya adalah Tri Bayu Priangga',
+            ),
+            const SizedBox(
+              height: 14.0,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+              ),
+              onPressed: () => Get.to(SoalcliView()),
+              child: const Text(
+                "Soal Prioritas2",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
             Text(
               '$_counter',
